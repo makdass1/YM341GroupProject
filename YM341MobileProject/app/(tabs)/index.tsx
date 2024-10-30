@@ -5,15 +5,8 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-        <h1>Sign up</h1>
+  <form> 
+  <h1 >Sign up</h1>
     <p>Lütfen boşlukları gerekli bilgiler ile doldurunuz</p>
     <form method="post" action='login.html'>
       <fieldset>
@@ -42,7 +35,10 @@ export default function HomeScreen() {
       <input type="submit" value="Kayıt" />
     </form>
     <script src="login.js"></script>
-      </ParallaxScrollView>)
+  
+    
+        </form>
+  )
 }
 
 const styles = StyleSheet.create({
