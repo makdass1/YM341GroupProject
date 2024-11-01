@@ -10,8 +10,8 @@ export default function HomeScreen() {
     <p>Lütfen boşlukları gerekli bilgiler ile doldurunuz</p>
     <form method="post" action='login.html'>
       <fieldset>
-        <label typeof="name">Adinizi ve soyadinizi giriniz: <input id="name" name="name" type="text" required /></label>
-        <label typeof="username">Kullanici adinizi giriniz: <input id="username" name="username" type="text" required /></label>
+        <label typeof="name">Adinizi ve soyadinizi giriniz: <input id="name" name="name"  required /></label>
+        <label typeof="username">Kullanici adinizi giriniz: <input id="username" name="username"  required /></label>
         <label typeof="email">Email adresinizi giriniz: <input id="email" name="email" type="email" required /></label>
         <label typeof="password">Bir şifre oluşturunuz: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
         <span className="toggle-password" id="togglePassword">👁️</span>
@@ -26,7 +26,7 @@ export default function HomeScreen() {
         <label typeof="age">Yaşınızı giriniz: <input id="age" type="number" name="age" min="13" max="120" /></label>
         
         <label typeof="bio">Kendinizi tanıtınız:
-          <textarea id="bio" name="bio" placeholder="Ben 3.sınıf yazılım öğrencisyim..."></textarea>
+          
         </label>
       </fieldset>
       <label typeof="terms-and-conditions">
